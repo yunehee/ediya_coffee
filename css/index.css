@@ -1,0 +1,397 @@
+.main {
+    width: 100%;
+}
+
+
+/* 메인배너 */
+.main_banner_container {
+    width: 100%;
+    padding-bottom: 32%;
+    position: relative;
+}
+.main_banner_img_box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+.main_banner_img_box_wrap {
+    width: 700%;
+    height: 100%;
+
+    display: flex;
+}
+.main_banner_img {
+    width: 100%;
+    height: 100%;
+}
+.main_banner_img.animated {
+    transition: left .3s ease-in;
+}
+.main_banner_img1 {
+    background: url(../img/main_banner/main_banner1_L.jpg) no-repeat center / cover;
+}
+.main_banner_img2 {
+    background: url(../img/main_banner/main_banner2_L.jpg) no-repeat center / cover;
+}
+.main_banner_img3 {
+    background: url(../img/main_banner/main_banner3_L.jpg) no-repeat center / cover;
+}
+.main_banner_img4 {
+    background: url(../img/main_banner/main_banner4_L.jpg) no-repeat center / cover;
+}
+.main_banner_img5 {
+    background: url(../img/main_banner/main_banner5_L.jpg) no-repeat center / cover;
+}
+.main_banner_img6 {
+    background: url(../img/main_banner/main_banner6_L.jpg) no-repeat center / cover;
+}
+.indi_box {
+    height: 20px;
+
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.indi {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #555;
+    float: left;
+    margin: 0 10px;
+
+    text-indent: -9999em;
+}
+.indi_active {
+    background: red;
+}
+.main_banner_prev_btn {
+    width: 24px;
+    height: 45px;
+    background: url(../img/icon/main_visual_prev.png) no-repeat center / cover;
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+.main_banner_next_btn {
+    width: 24px;
+    height: 45px;
+    background: url(../img/icon/main_visual_next.png) no-repeat center / cover;
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+
+/* MD'S PICK */
+.md_pick_container {
+    width: 100%;
+    background: url(../img/block02_bg.jpg) no-repeat center / cover;
+    padding-bottom: 20px;
+}
+.container_title {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-family: 'KyoboHand';
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    color: #13235e;
+    padding: 25px 0;
+}
+
+.md_pick_title {
+    color: #fff;
+}
+.md_pick_item_outer_box {
+    width: 100%;
+    overflow-x: scroll;
+}
+.md_pick_item_outer_box::-webkit-scrollbar {
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 20px;
+    background-clip: border-box;    
+}
+.md_pick_item_outer_box::-webkit-scrollbar-thumb {
+    background: #f3b3c3;
+    border-radius: 20px;
+     
+    border:1px solid transparent;
+    background-clip: padding-box;
+}
+
+.md_pick_item_inner_box {
+    width: 150%;
+    overflow: hidden;
+}
+.md_pick_item {
+    width: calc((100% - (10px * 7)) / 8);
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+
+    background: #fff;
+    float: left;
+}
+.md_pick_item:last-child {
+    margin-right: 0;
+}
+
+
+
+
+.item_img {
+    width: 100%;
+    padding-bottom: 85%;
+}
+.item_name {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+
+    color: #13235e;
+}
+
+.md_pick_item_img {
+    transform: rotate(0);
+}
+
+.md_pick_item_img1 {
+    background: url(../img/menu/drink/beverage/beverage4.png) no-repeat center / contain;
+}
+.md_pick_item_img2 {
+    background: url(../img/menu/drink/season/season10.png) no-repeat center / contain;
+}
+.md_pick_item_img3 {
+    background: url(../img/menu/drink/season/season13.png) no-repeat center / contain;
+}
+.md_pick_item_img4 {
+    background: url(../img/menu/drink/beverage/beverage13.png) no-repeat center / contain;
+}
+.md_pick_item_img5 {
+    background: url(../img/menu/drink/beverage/beverage17.png) no-repeat center / contain;
+}
+.md_pick_item_img6 {
+    background: url(../img/menu/drink/beverage/beverage22.png) no-repeat center / contain;
+}
+.md_pick_item_img7 {
+    background: url(../img/menu/drink/flatccino/flatccino2.png) no-repeat center / contain;
+}
+.md_pick_item_img8 {
+    background: url(../img/menu/drink/blending_tea/blending_tea30.png) no-repeat center / contain;
+}
+
+
+
+
+.md_pick_item:hover .md_pick_item_img {
+    animation: rotate_ani 1s 1;
+    
+}
+@keyframes rotate_ani {
+    0% { transform: rotate(0); }
+    50% { transform: rotate(15deg); }
+    100% { transform: rotate(0); }
+}
+
+
+
+
+/* what's new */
+.new_container {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.new_container_inner {
+    overflow: hidden;
+}
+
+.new_title_box {
+    width: 30%;
+    float: left;
+
+    margin-top: 20px;
+    padding: 10px 0;
+}
+.new_title_sub_menu {
+    width: 100%;
+}
+.new_sub_menu {
+    float: left;
+    width: calc((100% - (10px*4)) / 2);
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0 10px;
+
+    background: #f6eaf4;
+
+    cursor: pointer;
+}
+
+.new_outer_box {
+    width: 70%;
+    float: left;
+    overflow: hidden;
+}
+.new_outer_box_food {
+    display: none;
+}
+.new_inner_box {
+    width: calc((100% - (10px * 2)) / 3);
+
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+}
+.new_inner_box:nth-child(3n) {
+    margin-right: 0;
+}
+.new_inner_box:nth-child(2n-1) {
+    background: #f3b3c3;
+}
+.new_inner_box:nth-child(2n) {
+    background: #f6eaf4;
+}
+
+.new_item_img1 {
+    background: url(../img/menu/drink/season/season1.png) no-repeat center / contain;
+}
+.new_item_img2 {
+    background: url(../img/menu/drink/season/season2.png) no-repeat center / contain;
+}
+.new_item_img3 {
+    background: url(../img/menu/drink/season/season5.png) no-repeat center / contain;
+}
+.new_item_img4 {
+    background: url(../img/menu/drink/season/season6.png) no-repeat center / contain;
+}
+.new_item_img5 {
+    background: url(../img/menu/drink/season/season9.png) no-repeat center / contain;
+}
+.new_item_img6 {
+    background: url(../img/menu/drink/season/season10.png) no-repeat center / contain;
+}
+
+.new_item_img7 {
+    background: url(../img/menu/food/season/season1.png) no-repeat center / contain;
+}
+.new_item_img8 {
+    background: url(../img/menu/food/season/season2.png) no-repeat center / contain;
+}
+.new_item_img9 {
+    background: url(../img/menu/food/season/season3.png) no-repeat center / contain;
+}
+.new_item_img10 {
+    background: url(../img/menu/food/season/season4.png) no-repeat center / contain;
+}
+.new_item_img11 {
+    background: url(../img/menu/food/dessert/dessert7.png) no-repeat center / contain;
+}
+.new_item_img12 {
+    background: url(../img/menu/food/dessert/dessert8.png) no-repeat center / contain;
+}
+
+
+
+/* beanist */
+.beanist_container {
+    width: 100%;
+    background: url(../img/main_beanist_bg.gif) no-repeat center / cover;
+}
+.beanist_sub {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+.beanist_sub > span {
+    font-weight: 900;
+}
+.beanist_outer_box {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.beanist_inner_box {
+    float: left;
+    width: calc(100% / 3);
+}
+.beanist_item_img {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* insta */
+.insta_container {
+    width: 100%;
+    background: url(../img/bg5.jpg) no-repeat center / cover;
+    padding: 30px 0;
+}
+.insta_title {
+    color: #fff;
+}
+.insta_outer_box {
+    width: 100%;
+    overflow: hidden;
+}
+.insta_img_box {
+    width: calc((100% - (10px * 4)) / 5);
+    padding-bottom: calc((100% - (10px * 4)) / 5);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+    overflow: hidden;
+    border-radius: 10px;
+
+    position: relative;
+}
+.insta_img_box:nth-child(5n) {
+    margin-right: 0;
+}
+.insta_img {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all 0.5s;
+    transform: translate(-50%, -50%) scale(1);
+}
+.insta_img_box:hover .insta_img {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+.insta_id_outer_box {
+    width: 100%;
+}
+.insta_id_inner_box {
+    width: 300px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    background: pink;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    
+}

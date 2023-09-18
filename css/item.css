@@ -1,0 +1,96 @@
+.main {
+    width: 100%;
+}
+
+.main_inner {
+    width: 100%;
+    margin: 50px 0;
+}
+.contents_box {
+    width: 100%;
+}
+
+.item_img_box {
+    width: 40%;
+    margin: 0 auto;
+    
+    text-align: center;
+    font-size: 0;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+.item_img_box > img {
+    width: 100%;
+}
+
+
+.item_info_box {
+    width: 100%;
+    margin: 0 auto;
+
+    margin-top: 50px;
+}
+
+.item_name {
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    margin: 20px 0;
+    background: #000;
+}
+
+.item_desc {
+    font-size: 20px;
+    text-align: center;
+}
+
+.nutrition_facts_title {
+    font-size: 23px;
+    text-align: center;
+
+    margin-top: 40px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.nutrition_facts_box {
+    width: 100%;
+    overflow: hidden;
+}
+.nutrition_facts {
+    width: 45%;
+
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.nutrition_facts_L {
+    float: left;
+}
+.nutrition_facts_R {
+    float: right;
+}
+.nutrition_facts > dl {
+    width: 100%;
+    overflow: hidden;
+}
+.nutrition_facts dt {
+    width: 70%;
+    float: left;
+}
+.nutrition_facts dd {
+    width: 30%;
+    float: right;
+    text-align: right;
+    margin: 0;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    
+}
