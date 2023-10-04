@@ -3,7 +3,7 @@
 }
 
 
-/* 메인배너 */
+/* main_banner */
 .main_banner_container {
     width: 100%;
     padding-bottom: 32%;
@@ -63,6 +63,9 @@
 
     text-indent: -9999em;
 }
+.indi:hover {
+    cursor: pointer;
+}
 .indi_active {
     background: #eb6365;
 }
@@ -76,7 +79,7 @@
     top: 50%;
     left: 3%;
     transform: translateY(-50%);
-    z-index: 999;
+    z-index: 99;
 }
 .main_banner_next_btn {
     width: 30px;
@@ -88,7 +91,7 @@
     top: 50%;
     right: 3%;
     transform: translateY(-50%);
-    z-index: 999;
+    z-index: 99;
 }
 .main_banner_prev_btn > img,
 .main_banner_next_btn > img {
@@ -128,15 +131,15 @@
 }
 .md_pick_item_outer_box::-webkit-scrollbar {
     height: 8px;
-    background-color: #ddd;
+    background-color: #d1e1ff;
     border-radius: 20px;
     background-clip: border-box;    
 }
 .md_pick_item_outer_box::-webkit-scrollbar-thumb {
-    background: #f3b3c3;
+    background: #13235e;
     border-radius: 20px;
      
-    border:1px solid transparent;
+    border: 1px solid transparent;
     background-clip: padding-box;
 }
 
@@ -158,8 +161,6 @@
 }
 
 
-
-
 .item_img {
     width: 100%;
     padding-bottom: 85%;
@@ -171,7 +172,14 @@
     text-align: center;
     font-size: 18px;
 
+    padding: 0 3px;
+    box-sizing: border-box;
+
     color: #13235e;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .md_pick_item_img {
@@ -277,6 +285,12 @@
 .new_inner_box:nth-child(2n) {
     background: #f6eaf4;
 }
+.new_inner_box:hover {
+    background: #d1e1ff;
+}
+.new_inner_box > a {
+    display: block;
+}
 
 .new_item_img1 {
     background: url(../img/menu/drink/season/season1.png) no-repeat center / contain;
@@ -315,7 +329,6 @@
 .new_item_img12 {
     background: url(../img/menu/food/dessert/dessert8.png) no-repeat center / contain;
 }
-
 
 
 /* beanist */
@@ -401,5 +414,46 @@
 
 
 @media screen and (max-width: 1200px) {
-    
+    /* main_banner */
+    .main_banner_container {
+        padding-bottom: 53%;
+    }
+    .main_banner_img1 {
+        background: url(../img/main_banner/main_banner1_M.jpg) no-repeat center / cover;
+    }
+    .main_banner_img2 {
+        background: url(../img/main_banner/main_banner2_M.jpg) no-repeat center / cover;
+    }
+    .main_banner_img3 {
+        background: url(../img/main_banner/main_banner3_M.jpg) no-repeat center / cover;
+    }
+    .main_banner_img4 {
+        background: url(../img/main_banner/main_banner4_M.jpg) no-repeat center / cover;
+    }
+    .main_banner_img5 {
+        background: url(../img/main_banner/main_banner5_M.jpg) no-repeat center / cover;
+    }
+    .main_banner_img6 {
+        background: url(../img/main_banner/main_banner6_M.jpg) no-repeat center / cover;
+    }
+
+    /* MD'S PICK */
+    .container_title {
+        height: 45px;
+        line-height: 45px;
+        font-size: 38px;
+        padding: 23px 0;
+    }
+    .item_name {
+        font-size: 17px;
+    }
+
+    .md_pick_item_inner_box {
+        width: 180%;
+    }
+
+    /* what's new */
+    .new_sub_menu {
+        font-size: 18px;
+    }
 }
