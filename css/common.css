@@ -70,21 +70,23 @@ h1 {
     background: #dfeaff;
 
     position: absolute;
-    top: 120px;
+    top: 100%;
     left: 0;
     z-index: 99999;
     transition: all 0.6s;
 }
 .header.nav_on::after {
-    height: 276px;
+    height: 272px;
 }
 .header > .container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .logo {
     width: 212px;
-    height: 90px;
-    padding-top: 15px;
+    height: 100%;
+    background: url(../img/logo3.jpg) no-repeat center / contain;
 }
 .logo > a {
     display: block;
@@ -97,7 +99,7 @@ h1 {
 
 
 .header_right_section {
-    width: calc(100% - 212px);
+    width: calc(100% - 220px);
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -281,28 +283,47 @@ h1 {
 
 @media screen and (max-width: 1100px) {
     .header::after {
-        background: rgba(175, 176, 178, 0.8);
+        background: rgba(154, 154, 154, 0.8);
     }
     .header.nav_on::after {
-        height: calc(100vh - 120px);
+        height: calc(100vh - 100%);
     }
-
     .header_right_section {
+        width: auto;
         flex-direction: column;
-        align-items: flex-end;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: normal;
-    }
-
-    /* gnb */
-    .gnb_ul {
-        display: none;
+        flex-wrap: nowrap;
+        justify-content: normal;
 
         position: absolute;
         top: 100%;
         right: 0;
         z-index: 99999999;
+        transform: scaleY(0);
+        transform-origin: 50% 0;
+        transition: transform 0.6s;
+    }
+
+    /* top_menu */
+    .header_top_menu_ul {
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-around;
+        background: #e7e7e7;
+    }
+
+    .header_top_menu_li {
+        display: none;
+    }
+    .header_top_menu_li:first-child,
+    .header_top_menu_li:last-child {
+        display: block;
+    }
+
+    /* gnb */
+    .gnb_ul {
+        display: block;
     }
     .gnb_li > a {
         padding: 20px 50px;
@@ -335,5 +356,14 @@ h1 {
     .footer_right {
         float: auto;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .header {
+        height: 80px;
+    }
+    .logo {
+        background: url(../img/top_logo.gif) no-repeat center / contain;
     }
 }

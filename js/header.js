@@ -1,8 +1,11 @@
-let header = document.getElementsByClassName('header')[0];
+let header = document.querySelector('.header');
+let header_right_section = document.querySelector('.header_right_section');
 let gnb_ul = document.querySelector('.gnb_ul');
 let gnb_li = document.querySelectorAll('.gnb_li');
 let ham_menu = document.querySelector('.ham_menu');
 
+
+// gnb
 gnb_li.forEach(function(nav_li){
     nav_li.addEventListener('mouseover', function(){
         // 1100 이상일 때
@@ -40,11 +43,11 @@ ham_menu.addEventListener('click', function(){
     this.querySelectorAll('.ham_line').forEach(function(el){
         if(el.classList.contains('active')) {
             header.classList.remove('nav_on');
-            gnb_ul.style.display = 'none';
+            header_right_section.style.transform = 'scaleY(0)';
         }
         else {
             header.classList.add('nav_on');
-            gnb_ul.style.display = 'block';
+            header_right_section.style.transform = 'scaleY(1)';
         }
 
         el.classList.toggle('active');

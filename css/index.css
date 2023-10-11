@@ -456,4 +456,9 @@
     .new_sub_menu {
         font-size: 18px;
     }
+
+    /* beanist */
+    .beanist_outer_box {
+        width: 95%;
+    }
 }

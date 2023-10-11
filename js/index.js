@@ -42,6 +42,7 @@ function main_banner_slide(){
                 main_banner_img_box_wrap.style.transition = '0s';
                 main_banner_img_box_wrap.style.marginLeft = 0;
                 
+                
                 banner_index = 0;
 
             }, 700);
