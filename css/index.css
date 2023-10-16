@@ -246,6 +246,7 @@
 }
 .new_title_sub_menu {
     width: 100%;
+    overflow: hidden;
 }
 .new_sub_menu {
     float: left;
@@ -373,13 +374,17 @@
 .insta_outer_box {
     width: 100%;
     overflow: hidden;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .insta_img_box {
     width: calc((100% - (10px * 4)) / 5);
     padding-bottom: calc((100% - (10px * 4)) / 5);
     margin-right: 10px;
     margin-bottom: 10px;
-    float: left;
+
     overflow: hidden;
     border-radius: 10px;
 
@@ -460,5 +465,86 @@
     /* beanist */
     .beanist_outer_box {
         width: 95%;
+    }
+
+    /* insta */
+    .insta_outer_box {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    /* MD'S PICK */
+    .container_title {
+        height: 43px;
+        line-height: 43px;
+        font-size: 38px;
+        padding: 20px 0;
+    }
+
+    .md_pick_item_outer_box {
+        overflow-x: auto;
+    }
+    .md_pick_item_inner_box {
+        width: calc(100% - 20px);
+        margin: 0 auto;
+    }
+    .md_pick_item {
+        width: calc((100% - (10px * 3)) / 4);
+    }
+    .md_pick_item:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    .item_name {
+        height: 40px;
+        line-height: 40px;
+        font-size: 15px;
+    }
+
+    /* what's new */
+    .new_title_box {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+    }
+    .new_title_sub_menu {
+        margin: 0 auto;
+        padding: 0 20%;
+        box-sizing: border-box;
+    }
+    .new_outer_box {
+        width: 100%;
+        float: none;
+        padding: 0 10%;
+        box-sizing: border-box;
+    }
+
+    /* beanist */
+    .beanist_sub {
+        width: calc(100% - 20px);
+        font-size: 18px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+    .beanist_item_img > img {
+        width: 80%;
+    }
+
+    /* insta */
+    .insta_img_box {
+        width: calc((100% - (10px * 3)) / 4);
+        padding-bottom: calc((100% - (10px * 3)) / 4);
+    }
+    .insta_img_box:nth-child(4n) {
+        margin-right: 0;
+    }
+    .insta_img_box:nth-child(5n) {
+        margin-right: 10px;
+    }
+    .insta_img_box:nth-child(9),
+    .insta_img_box:nth-child(10) {
+        display: none;
     }
 }
