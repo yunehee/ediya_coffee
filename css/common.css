@@ -190,15 +190,23 @@ h1 {
     margin: 10px;
     border: 2px solid #13235e;
     box-sizing: border-box;
+
+    position: relative;
 }
 .ham_menu:hover {
     cursor: pointer;
 }
 .ham_line {
-    width: 100%;
+    width: calc(100% - 10px);
     height: 4px;
     background: #13235e;
     border-radius: 2px;
+
+    position: absolute;
+    left: 5px;
+}
+.ham_line_top {
+    top: 7px;
 }
 .ham_line_top.active {
     animation: ham_line_top_translate 0.1s forwards,
@@ -206,18 +214,32 @@ h1 {
 }
 @keyframes ham_line_top_translate {
     0% {transform: translateX(0);}
-    100% {transform: translateY(10px);}
+    100% {
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 @keyframes ham_line_top_rotate {
-    0% {transform: translateY(10px) rotate(0deg)}
-    100% {transform: translateY(10px) rotate(45deg)}
+    0% {
+        transform: translateY(-50%) rotate(0deg)
+    }
+    100% {
+        transform: translateY(-50%) rotate(45deg)
+    }
+}
+.ham_line_mid {
+    top: 50%;
+    transform: translateY(-50%);
 }
 .ham_line_mid.active {
     animation: ham_line_mid_scale 0s 0.1s forwards;
 }
 @keyframes ham_line_mid_scale {    
-    0% { transform: scale(1)}
-    100% { transform: scale(0)}
+    0% { transform: scale(1);}
+    100% { transform: scale(0);}
+}
+.ham_line_bot {
+    bottom: 7px;
 }
 .ham_line_bot.active {
     animation: ham_line_bot_trans 0.1s forwards,
@@ -225,11 +247,18 @@ h1 {
 }
 @keyframes ham_line_bot_trans {
     0% {transform: translateY(0);}
-    100% {transform: translateY(-10px);}
+    100% {
+        bottom: 50%;
+        transform: translateY(50%);
+    }
 }
 @keyframes ham_line_bot_rotate {
-    0% {transform: translateY(-10px) rotate(0deg)}
-    100% {transform: translateY(-10px) rotate(-45deg)}
+    0% {
+        transform: translateY(50%) rotate(0deg);
+    }
+    100% {
+        transform: translateY(50%) rotate(-45deg);
+    }
 }
 
 
@@ -370,9 +399,7 @@ h1 {
 
     /* ham_menu */
     .ham_menu {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-around;
+        display: block;
     }
 
     /* footer */
