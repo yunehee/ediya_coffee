@@ -22,6 +22,9 @@ indi[0].classList.add('indi_active');
 
 main_banner_img_box_wrap.appendChild(main_banner_img_box_wrap.firstElementChild.cloneNode(true));
 
+// main_banner_img_box_wrap.prepend(main_banner_img_box_wrap.lastElementChild.cloneNode(true));
+// main_banner_img_box_wrap.appendChild(main_banner_img_box_wrap.firstElementChild.nextElementSibling.cloneNode(true));
+
 
 // 슬라이드 이동 함수
 function main_banner_slide(){

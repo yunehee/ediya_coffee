@@ -311,7 +311,6 @@ h1 {
 }
 
 
-
 @media screen and (max-width: 1100px) {
     .header::after {
         background: rgba(154, 154, 154, 0.8);
@@ -344,8 +343,9 @@ h1 {
         font-size: 14px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         background: #e7e7e7;
+        padding: 0 15px;
     }
     .header_top_menu_li {
         margin: 0;

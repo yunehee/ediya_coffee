@@ -53,3 +53,10 @@ ham_menu.addEventListener('click', function(){
         el.classList.toggle('active');
     });
 });
+
+
+
+window.onresize = function(event){
+    var innerWidth = window.innerWidth;
+    innerWidth <= '1100' ? header_right_section.style.transform = 'scaleY(0)' : header_right_section.style.transform = 'scaleY(1)';
+};
